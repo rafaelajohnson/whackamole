@@ -1,9 +1,65 @@
+/* center the entire app in the viewport */
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+  font-family: sans-serif;
+  background: #fafafa;
+}
 
+/* welcome screen */
+.welcome {
+  text-align: center;
+}
+.welcome button {
+  padding: 0.5rem 1rem;
+  background: #4caf50;
+  border: none;
+  color: #fff;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+/* game board header */
+.game-board header {
+  display: flex;
+  justify-content: space-between;
+  width: 300px;
+  margin-bottom: 1rem;
+}
+.game-board header button {
+  padding: 0.3rem 0.6rem;
+  background: #f44336;
+  border: none;
+  color: #fff;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+/* holes grid */
+.holes-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 100px);
+  gap: 10px;
+  justify-content: center;
+}
+
+/* your hole + mole */
 .hole {
+  width: 100px;
+  height: 100px;
   background: url("/hole.png") no-repeat center/contain;
+  position: relative;
+  cursor: pointer;
 }
-
 .mole {
-  background-image: url("/mole.png");
+  width: 80px;
+  height: 80px;
+  background: url("/mole.png") no-repeat center/contain;
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  pointer-events: none;
 }
-
