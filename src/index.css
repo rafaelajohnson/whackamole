@@ -26,9 +26,11 @@ body {
 .game-board header {
   display: flex;
   justify-content: space-between;
-  width: 300px;
-  margin-bottom: 1rem;
+  align-items: center;
+  width: 360px;    /* a bit wider for the extra Time field */
+  margin: 0 auto 1rem;
 }
+
 .game-board header button {
   padding: 0.3rem 0.6rem;
   background: #f44336;
